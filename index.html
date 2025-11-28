@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bygårds Replacer - Ladda Ner</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lägger till Babel för att kunna köra TSX direkt i webbläsaren -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
@@ -71,5 +73,7 @@
 </head>
   <body>
     <div id="root"></div>
+    <!-- Ändrat till text/babel för att Babel ska processa filen -->
+    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>

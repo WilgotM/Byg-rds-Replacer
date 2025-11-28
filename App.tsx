@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Hero } from './components/Hero';
-import { Features } from './components/Features';
-import { Footer } from './components/Footer';
-import { Navigation } from './components/Navigation';
-import { FloatingHeads } from './components/FloatingHeads';
+import { Hero } from './components/Hero.tsx';
+import { Features } from './components/Features.tsx';
+import { Footer } from './components/Footer.tsx';
+import { Navigation } from './components/Navigation.tsx';
+import { FloatingHeads } from './components/FloatingHeads.tsx';
 
 export default function App() {
   const [mounted, setMounted] = useState(false);
